@@ -1,0 +1,16 @@
+<div id="bienvenueBlock" style="margin-bottom: 15px; padding: 10px; background: #e0f2fe;
+border-radius: 6px;">
+ <label for="usernameInput">Votre nom est:</label>
+ <input type="text" id="usernameInput" placeholder="Votre nom va apparaitre ici...">
+ <h3 id="messageBienvenue" style="margin-top: 10px; color: #0369a1;">Bienvenue dans le JS
+Lab !</h3>
+</div>
+<script>
+
+window.onload = function() {
+ let nomSaisi = prompt("Bienvenue ! Quel est votre nom ?");
+ document.getElementById('usernameInput').value = nomSaisi;
+ if (nomSaisi !== null && nomSaisi.trim() !== ""){ 
+ alert ("Bienvenue à ce site éducatif "+nomSaisi);
+}};
+ </script>
